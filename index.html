@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Scan QR untuk buka video</title>
+  <title>Scan QR untuk buka foto</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
     body {
@@ -19,20 +19,22 @@
     #qrcode {
       margin-top: 20px;
       background: white;
-      padding: 10px;
-      border-radius: 10px;
+      padding: 12px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
   </style>
 </head>
 <body>
-  <h2>📱 Scan QR untuk langsung buka video</h2>
+  <h2>📷 Scan QR untuk buka foto</h2>
   <div id="qrcode"></div>
 
   <script>
     new QRCode(document.getElementById("qrcode"), {
-      text: "https://ridhoo33455.github.io/projek-qr/qr-video.html", // 👉 arahkan ke halaman video
-      width: 200,
-      height: 200
+      text: "https://ridhoo33455.github.io/projek-qr/qr-foto.html", // 👉 arahkan ke halaman foto
+      width: 220,
+      height: 220,
+      correctLevel: QRCode.CorrectLevel.H // lebih tahan error
     });
   </script>
 </body>
