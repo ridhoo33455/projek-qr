@@ -14,6 +14,7 @@
       background: #111;
       color: white;
       font-family: sans-serif;
+      text-align: center;
     }
     #qrcode {
       margin-top: 20px;
@@ -24,12 +25,12 @@
   </style>
 </head>
 <body>
-  <h2>📱 Scan QR untuk buka video</h2>
+  <h2>📱 Scan QR untuk langsung buka video</h2>
   <div id="qrcode"></div>
 
   <script>
     new QRCode(document.getElementById("qrcode"), {
-      text: "https://ridhoo33455.github.io/projek-qr/qr-video.html", // 🔥 Link tujuan
+      text: "https://ridhoo33455.github.io/projek-qr/qr-video.html", // 👉 arahkan ke halaman video
       width: 200,
       height: 200
     });
