@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Halaman Video</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #000;
+      font-family: Arial, sans-serif;
+    }
+    video {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+    }
+    a {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #1e90ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <video controls autoplay>
+    <source src="video.mp4" type="video/mp4">
+    Browser tidak mendukung video.
+  </video>
+
+  <a href="index.html">⬅️ Kembali ke QR</a>
+</body>
+</html>

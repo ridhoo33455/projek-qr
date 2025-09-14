@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>QR ke Halaman Video</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: white;
+    }
+    h2 { margin-bottom: 20px; }
+    #qrcode {
+      padding: 15px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+  <h2>📱 Scan QR untuk buka video</h2>
+  <div id="qrcode"></div>
+
+  <script>
+    // Nanti link ini diganti dengan alamat GitHub Pages
+    const pageUrl = "https://username.github.io/projek-qr/qr-video.html";
+
+    new QRCode(document.getElementById("qrcode"), {
+      text: pageUrl,
+      width: 220,
+      height: 220,
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+</html>
