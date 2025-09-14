@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>QR Code Foto</title>
+  <title>Scan QR untuk buka foto</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
     body {
@@ -26,15 +26,15 @@
   </style>
 </head>
 <body>
-  <h2>📷 Scan QR untuk lihat foto</h2>
+  <h2>📷 Scan QR untuk buka foto</h2>
   <div id="qrcode"></div>
 
   <script>
     new QRCode(document.getElementById("qrcode"), {
-      text: "https://ridhoo33455.github.io/projek-qr/foto.jpg", // 👉 langsung ke foto
+      text: "https://ridhoo33455.github.io/projek-qr/qr-foto.html", // 👉 arahkan ke halaman foto
       width: 220,
       height: 220,
-      correctLevel: QRCode.CorrectLevel.H
+      correctLevel: QRCode.CorrectLevel.H // lebih tahan error
     });
   </script>
 </body>
