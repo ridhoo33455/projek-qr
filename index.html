@@ -1,27 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <title>QR ke Halaman Video</title>
+  <meta charset="UTF-8">
+  <title>Scan QR untuk buka video</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
     body {
-      margin: 0;
-      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      font-family: Arial, sans-serif;
-      background: #0d0d0d;
+      height: 100vh;
+      background: #111;
       color: white;
+      font-family: sans-serif;
     }
-    h2 { margin-bottom: 20px; }
     #qrcode {
-      padding: 15px;
+      margin-top: 20px;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+      padding: 10px;
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -30,14 +28,10 @@
   <div id="qrcode"></div>
 
   <script>
-    // Nanti link ini diganti dengan alamat GitHub Pages
-    const pageUrl = "https://username.github.io/projek-qr/qr-video.html";
-
     new QRCode(document.getElementById("qrcode"), {
-      text: pageUrl,
-      width: 220,
-      height: 220,
-      correctLevel: QRCode.CorrectLevel.H
+      text: "https://ridhoo33455.github.io/projek-qr/qr-video.html", // 🔥 Link tujuan
+      width: 200,
+      height: 200
     });
   </script>
 </body>
